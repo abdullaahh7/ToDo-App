@@ -168,11 +168,9 @@ body {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1101px) {
   #container {
-    width: 90%;
-    height: auto;
-    min-height: 100vh;
+    width: 45%;
   }
 
   #container h1 {
@@ -203,5 +201,17 @@ body {
 
   .nav-item i {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 523px) {
+  #container {
+    width: 55%;
+  }
+}
+
+@media (max-width: 439px) {
+  #container {
+    width: 100%;
   }
 }
