@@ -59,7 +59,7 @@ body {
 
 .icon-wrapper {
   display: flex;
-  gap: 12px; 
+  gap: 12px;
 }
 
 .single-task i {
@@ -138,6 +138,7 @@ body {
   font-size: 14px;
   cursor: pointer;
 }
+
 .nav-item i {
   font-size: 20px;
   margin-bottom: 4px;
@@ -165,4 +166,14 @@ body {
 
 .nav-item.active::after {
   width: 100%;
+}
+
+@media (max-width: 500px) {
+  #container h1 {
+    font-size: 1.8rem;
+  }
+
+  #container button {
+    width: 80%;
+  }
 }
