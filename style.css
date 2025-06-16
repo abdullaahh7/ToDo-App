@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #d5bdaf;
+}
+
+#container {
+  background-color: #f7ecdb;
+  border: 4px solid black;
+  border-radius: 10px;
+  width: 30%;
+  height: 800px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.cont-wrapper {
+  text-align: center;
+}
+
+#container h1 {
+  font-size: 50px;
+  padding-top: 30px;
+  padding-bottom: 8px;
+}
+
+#container button {
+  padding: 8px;
+  border: none;
+  background-color: black;
+  color: #f7ecdb;
+  width: 40%;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 26px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+#tasks {
+  padding: 10px 20px;
+  line-height: 35px;
+  overflow-x: hidden;
+}
+
+.single-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  padding: 6px 0;
+}
+
+.icon-wrapper {
+  display: flex;
+  gap: 12px; 
+}
+
+.single-task i {
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+}
+
+.single-task p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+#container button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #f7ecdb;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal input {
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.modal button {
+  padding: 10px 20px;
+  background-color: #a6785c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #1f1f1f;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  color: #fff;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+.nav-item i {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.nav-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #a6785c;
+  transition: width 0.3s ease;
+}
+
+.nav-item.active::after {
+  width: 100%;
+}

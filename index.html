@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="cont-wrapper">
+        <h1>TO DO LIST</h1>
+        <button id="addTaskBtn">Add Task</button>
+      </div>
+      <div id="tasks"></div>
+    </div>
+
+    <!-- Modal Input -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <input id="add-inp" type="text" placeholder="Enter your task..." />
+        <button id="addModal">Add</button>
+      </div>
+    </div>
+
+    <div class="bottom-nav">
+      <div class="nav-item">
+        <i class="fa-solid fa-list-check"></i>
+        <span id="all-tasks">Tasks</span>
+      </div>
+      <div class="nav-item">
+        <i class="fa-solid fa-check"></i>
+        <span id="goToComplete">Completed</span>
+      </div>
+      <div class="nav-item">
+        <i class="fa-solid fa-xmark"></i>
+        <span id="incomplete-tasks">InCompleted</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- Add task btn 
+    Bottom nav
+    List toggle
+    deadlines
+    Handwritten fonts or playful icons
+    incomplete/completed
+-->
