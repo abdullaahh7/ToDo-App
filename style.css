@@ -168,12 +168,40 @@ body {
   width: 100%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+  #container {
+    width: 90%;
+    height: auto;
+    min-height: 100vh;
+  }
+
   #container h1 {
-    font-size: 1.8rem;
+    font-size: 32px;
   }
 
   #container button {
     width: 80%;
+    font-size: 18px;
+  }
+
+  .modal input {
+    width: 80%;
+  }
+
+  .modal button {
+    width: 80%;
+  }
+
+  .single-task p {
+    font-size: 16px;
+  }
+
+  .bottom-nav {
+    flex-direction: row;
+    font-size: 12px;
+  }
+
+  .nav-item i {
+    font-size: 18px;
   }
 }
